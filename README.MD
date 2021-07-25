@@ -20,3 +20,35 @@ Dentro da pasta do projeto, abra o bash e execute:
 ```bash
   git init
 ```
+
+## Obtendo um repositório
+
+```bash
+  git clone <caminho para o repositório>
+```
+
+## Fluxo de trabalho
+
+Seus repositoórios locais consistem em três "árvores" mantidas pelo git:
+
+- __Working Directory__ que contem os arquivos vigentes;
+- __Index__ que funciona como uma área temporária;
+- __HEAD__ que aponta para o último commit que você fez;
+
+## Adicionar e confirmar 
+
+Você pode incluir (Adicioná-las ao Index) as mudanças usando: 
+
+```bash
+  git add <nome do arquivo>
+```
+Ou adicionar todos os arquivos de uma vez: 
+
+```bash
+  git add .
+```
+Para realmente comfirmar as mudanças (fazer um commit) use:
+
+```bash
+  git commit -m "Comentários das alterações"
+```
