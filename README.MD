@@ -77,3 +77,21 @@ E se em vez de menos informações quisermos mais, como as alterações do commi
 ```bash
   #git log -p
 ```
+
+## Repositórios remotos
+Se você não clonou um repositório existente e quer conectar seu repositório a um servidor remoto, você deve adicioná-lo com:
+
+```bash
+  git remote add origin <servidor>
+
+  #Obs: origin é so uma convenção usada para dá nome ao repositório remoto, podendo ser alterado para um nome de sua preferência
+```
+
+### Enviando as alterações 
+Suas alterações agora estão no HEAD da sua cópia de trabalho local. Para enviar estas alterações ao seu repositório remoto, execute:
+
+```bash
+  git push origin master
+
+  #Obs: Altere master para qualquer ramo (branch) desejado, enviando suas alterações para ele.
+```
