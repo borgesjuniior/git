@@ -52,3 +52,28 @@ Para realmente comfirmar as mudanças (fazer um commit) use:
 ```bash
   git commit -m "Comentários das alterações"
 ```
+
+## Verificando histórico de commits
+O comando que poderemos utilizar para isto é **git log**, que nos mostrará diversas informações, sendo o primeiro deles um hash do commit, uma identificação única de cada commit.
+
+```bash
+  #git log
+
+  commit 84a8bffe2fcfdf0b1815d6281fd5a6f3f041a8c9 (HEAD -> master)
+  Author: user <seu@email.aqui>
+  Date:   Sun Jul 25 17:27:54 2021 -0300
+
+    Mensagem de commit
+```
+Uma das mais comuns nos permite visualizar todos os commits, sendo que cada uma ocupa uma única linha:
+```bash
+  #git log --oneline
+
+  84a8bff (HEAD -> master) mensagem de commit
+```
+
+E se em vez de menos informações quisermos mais, como as alterações do commit, usaremos:
+
+```bash
+  #git log -p
+```
