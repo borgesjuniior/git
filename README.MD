@@ -125,4 +125,21 @@ Remova o branch da seguinte forma
 ```bash
   git branch -d <nome da branch>
 ```
+## Atualizar e mesclar 
+Para atualizar seu repositório local com a mais nova versão, execute: 
 
+```bash
+  git pull <repositório> <branch>
+```
+
+Para fazer merge de um outro branch ao seu branch ativo (ex. master), use: 
+
+```bash
+  git merge <nome da branch>
+```
+
+Em ambos os casos o git tenta fazer o merge das alterações automaticamente. Infelizmente, isto nem sempre é possível e resulta em conflitos. Você é responsável por fazer o merge estes conflitos manualmente editando os arquivos exibidos pelo git. Depois de alterar, você precisa marcá-los como merged com: 
+
+```bash
+  git add <nome arquivo> || git add .
+```
