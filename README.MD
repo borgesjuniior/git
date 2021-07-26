@@ -44,7 +44,7 @@ Você pode incluir (Adicioná-las ao Index) as mudanças usando:
 ```
 Ou adicionar todos os arquivos de uma vez: 
 
-```bash
+```bashRot
   git add .
 ```
 Para realmente confirmar as mudanças (fazer um commit) use:
@@ -196,4 +196,35 @@ Depois enviamos a tag para o servidor usando:
 ```bash
   git push <nome do servidor> v0.1.0
 ```
-o 1b2e1d63ff representa os 10 primeiros caracteres do id de commit que você quer referenciar com seu rótulo
+- 1b2e1d63ff representa os 10 primeiros caracteres do id de commit que você quer referenciar com seu rótulo
+
+## Dicas úteis 
+
+usar saídas do git coloridas:
+
+```bash
+  git config color.ui true
+```
+
+exibir log em apenas uma linha por commit:
+
+```bash
+  git config format.pretty oneline
+```
+
+fazer inclusões interativas:
+
+```bash 
+  git add -i
+```
+
+Sinta se livre para fazer alguma correção nas issues ou fazer um PR  adicionando mais comandos.
+
+# :mailbox: Reach me	
+[![Linkedin Badge](https://img.shields.io/badge/-Valdecy%20Júnior-6633cc?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/valdecy-j%C3%BAnior-7558b9184/)](https://www.linkedin.com/in/valdecy-j%C3%BAnior-7558b9184/) 
+[![Gmail Badge](https://img.shields.io/badge/-borgesjuniior@hotmail.com-6633cc?style=flat-square&logo=Gmail&logoColor=white&link=mailto:valdecyborgesjr@hotmail.com)](mailto:valdecyborgesjr@hotmail.com)
+
+>This project was developed by **[Valdecy Júnior](https://www.linkedin.com/in/valdecy-j%C3%BAnior-7558b9184/)**
+If it helped you, give it ⭐, it will help me too 😉
+
+
