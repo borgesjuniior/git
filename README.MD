@@ -143,3 +143,43 @@ Em ambos os casos o git tenta fazer o merge das alterações automaticamente. In
 ```bash
   git add <nome arquivo> || git add .
 ```
+
+## Revertendo alterações
+No caso de você ter feito algo errado, você pode sobrescrever as alterações locais usando o commando:
+
+```bash
+  git restore <arquivo>
+```
+
+ou 
+
+```bash
+  git checkout -- <arquivo>
+```
+
+Isto substitui as alterações na sua árvore de trabalho com o conteúdo mais recente no HEAD.
+
+### Alterações já commitadas
+
+Queremos desfazer uma alteração que já foi marcada para ser commitada (git add), então usaremos: 
+
+```bash
+  git restore --staged <file>
+```
+
+Em um caso mais critico pode ser que você já tenha feito o commit, para isso usamos o comando:
+ ```bash
+  git revert <hash do commit>
+
+  #obs: esse comando gera um novo commit revertendo as alterações feitas no commit informado
+ ```
+
+ ## Viajando no tempo
+
+ o comando git checkout muda o estado da aplicação, seja desfazendo alterações, navegando entre branches ou commits. Assim, é possível utilizarmos:
+
+ ```bash
+  git checkout ea539b3
+ ```
+
+ Se realizarmos qualquer alteração, incluindo outro git commit, o HEAD se locomoverá para um lugar sem nome, uma branch inexistente. E se fizermos git checkout master para voltar para o estado atual, nunca mais conseguiremos acessar o commit em que estávamos anteriormente, que fica desanexado das linhas de desenvolvimento,  se quisermos fazer alterações que sejam salvas a partir daqui, será necessário criar uma branch antes.
