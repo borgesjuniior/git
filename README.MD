@@ -95,3 +95,34 @@ Suas alterações agora estão no HEAD da sua cópia de trabalho local. Para env
 
   #Obs: Altere master para qualquer ramo (branch) desejado, enviando suas alterações para ele.
 ```
+
+## Ramificando (branches)
+
+Branches ("ramos") são utilizados para desenvolver funcionalidades isoladas umas das outras. O branch master é o branch "padrão" quando você cria um repositório. Use outros branches para desenvolver e mescle-os (merge) ao branch master após a conclusão.
+
+Para criar um novo branch use: 
+
+```bash
+  git branch <nome da branch>
+```
+
+E alterne para essa branch usando: 
+
+```bash
+  git checkout <nome da branch>
+```
+
+Há a possibilidade de criar e mudar para a branch em apenas um comando usando: 
+
+```bash
+  git checkout -b <nome da branch>
+```
+
+### Removendo branch 
+
+Remova o branch da seguinte forma
+
+```bash
+  git branch -d <nome da branch>
+```
+
