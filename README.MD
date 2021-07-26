@@ -47,7 +47,7 @@ Ou adicionar todos os arquivos de uma vez:
 ```bash
   git add .
 ```
-Para realmente comfirmar as mudanças (fazer um commit) use:
+Para realmente confirmar as mudanças (fazer um commit) use:
 
 ```bash
   git commit -m "Comentários das alterações"
@@ -183,3 +183,17 @@ Em um caso mais critico pode ser que você já tenha feito o commit, para isso u
  ```
 
  Se realizarmos qualquer alteração, incluindo outro git commit, o HEAD se locomoverá para um lugar sem nome, uma branch inexistente. E se fizermos git checkout master para voltar para o estado atual, nunca mais conseguiremos acessar o commit em que estávamos anteriormente, que fica desanexado das linhas de desenvolvimento,  se quisermos fazer alterações que sejam salvas a partir daqui, será necessário criar uma branch antes.
+
+ ## Rotulando 
+
+É recomendado criar rótulos para releases de software. Este é um conhecido conceito, que também existe no SVN. Você pode criar um novo rótulo chamado 1.0.0 executando o comando: git tag ``<nome> <hash do commit>``
+
+```bash
+  git tag 1.0.0 1b2e1d63ff
+```
+Depois enviamos a tag para o servidor usando: 
+
+```bash
+  git push <nome do servidor> v0.1.0
+```
+o 1b2e1d63ff representa os 10 primeiros caracteres do id de commit que você quer referenciar com seu rótulo
